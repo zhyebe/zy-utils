@@ -130,7 +130,7 @@ const ve = P({
       t.value.beginPath(), t.value.moveTo(p.value, m.value), t.value.lineTo(e.x, e.y), t.value.lineCap = "round", t.value.lineJoin = "round", t.value.stroke(), t.value.closePath(), f.value.push(e), f.value.push({ x: -1, y: -1 });
     }, $ = (e) => {
       let l = e && e.format ? e.format : q.value, v = e && e.quality ? e.quality : O.value;
-      return new Promise((d, r) => {
+      return new Promise((g, r) => {
         if (!x.value) {
           r("Warning: Not Signned!");
           return;
@@ -144,24 +144,24 @@ const ve = P({
         t.value.globalCompositeOperation = "destination-over", t.value.fillStyle = T.value, t.value.fillRect(0, 0, a.value.width, a.value.height), R.value = a.value.toDataURL(l, v);
         let i = R.value;
         if (t.value.clearRect(0, 0, a.value.width, a.value.height), t.value.putImageData(o, 0, 0), t.value.globalCompositeOperation = "source-over", U.value) {
-          const g = K(o.data);
+          const d = K(o.data);
           let s = document.createElement("canvas");
           const B = s.getContext("2d");
-          s.width = g[2] - g[0], s.height = g[3] - g[1];
-          const Z = t.value.getImageData(...g);
+          s.width = d[2] - d[0], s.height = d[3] - d[1];
+          const Z = t.value.getImageData(...d);
           B.globalCompositeOperation = "destination-over", B.putImageData(Z, 0, 0), B.fillStyle = T.value, B.fillRect(0, 0, s.width, s.height), i = s.toDataURL(l, v), s = null;
         }
-        d(i);
+        g(i);
       });
     }, G = () => {
       t.value.clearRect(0, 0, a.value.width, a.value.height), W.value && (w("update:bgColor", ""), a.value.style.background = "rgba(255, 255, 255, 0)"), f.value = [], x.value = !1, R.value = "";
     }, K = (e) => {
-      for (var l = a.value.width, v = 0, y = a.value.height, d = 0, r = 0; r < a.value.width; r++)
+      for (var l = a.value.width, v = 0, y = a.value.height, g = 0, r = 0; r < a.value.width; r++)
         for (var o = 0; o < a.value.height; o++) {
           var i = (r + a.value.width * o) * 4;
-          (e[i] > 0 || e[i + 1] > 0 || e[i + 2] || e[i + 3] > 0) && (d = Math.max(o, d), v = Math.max(r, v), y = Math.min(o, y), l = Math.min(r, l));
+          (e[i] > 0 || e[i + 1] > 0 || e[i + 2] || e[i + 3] > 0) && (g = Math.max(o, g), v = Math.max(r, v), y = Math.min(o, y), l = Math.min(r, l));
         }
-      return l++, v++, y++, d++, [l, y, v, d];
+      return l++, v++, y++, g++, [l, y, v, g];
     };
     return h({
       reset: G,
@@ -183,9 +183,9 @@ const ie = (c, h) => {
   for (const [D, C] of h)
     w[D] = C;
   return w;
-}, L = /* @__PURE__ */ ie(re, [["__scopeId", "data-v-af746271"]]), se = [L], de = {
+}, se = /* @__PURE__ */ ie(re, [["__scopeId", "data-v-42278ae9"]]), L = se, ce = [L], de = {
   install(c) {
-    se.forEach((h) => {
+    ce.forEach((h) => {
       c.component(h.name, L);
     });
   }

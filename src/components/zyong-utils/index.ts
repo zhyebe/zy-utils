@@ -1,6 +1,7 @@
 import { App, DefineComponent } from 'vue'
-import ViteSign from "./vite-sign/index.vue";
+import viteSign from "./vite-sign/index.vue";
 
+const ViteSign: DefineComponent<{}, {}, any[]> = viteSign as DefineComponent<{}, {}, any[]>
 export { ViteSign }
 
 const component: DefineComponent<{}, {}, any>[] = [ViteSign]

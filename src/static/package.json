@@ -1,6 +1,6 @@
 {
-  "name": "lxhby-utils",
-  "version": "1.0.6",
+  "name": "zyong-utils",
+  "version": "1.0.0",
   "license": "MIT",
   "author": "zhyebe",
   "contributors": [
@@ -31,8 +31,7 @@
     "zhyebe",
     "工具组件"
   ],
-  "main": "zy-utils.umd.js",
-  "types": "./index.d.ts",
+  "main": "index.umd.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   }

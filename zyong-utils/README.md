@@ -1,6 +1,6 @@
-# lxhby-utils组件库(说明)
+# zyong-utils组件库(说明)
 ### 仅支持vue3，typescript
-- 直接`npm install lxhby-utils@latest --save`或者`yarn add lxhby-utils@latest --save`；
+- 直接`npm install zyong-utils@latest --save`或者`yarn add zyong-utils@latest --save`；
 
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/zhyebe/zy-utils)
 
@@ -18,7 +18,7 @@
 ### 安装
 
 ``` bash
-npm install lxhby-utils --save
+npm install zyong-utils --save
 ```
 
 ### 使用
@@ -27,11 +27,11 @@ npm install lxhby-utils --save
 //全局
 import { createApp } from 'vue'
 import App from './App.vue'
-import Utils from 'lxhby-utils'
+import Utils from 'zyong-utils'
 const app = createApp(App)
 app.use(Utils)
 // 局部
-import {ViteSign} from 'lxhby-utils'
+import {ViteSign} from 'zyong-utils'
 components: { ViteSign }
 ```
 2. 页面中使用
