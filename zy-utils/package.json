@@ -1,0 +1,38 @@
+{
+  "name": "zy-utils",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "zhyebe",
+  "contributors": [
+    "zhyebe",
+    "JaimeCheng"
+  ],
+  "description": "Utils Component, Developing with Vue 3 and Typescript in Vite.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhyebe/zy-utils"
+  },
+  "bugs": {
+    "url": "https://github.com/zhyebe/zy-utils/issues"
+  },
+  "homepage": "https://github.com/zhyebe/zy-utils#readme",
+  "keywords": [
+    "vite",
+    "sign",
+    "vue",
+    "vue-sign",
+    "vue-esign",
+    "vite-esign",
+    "电子签名",
+    "移动端电子签名",
+    "PC端电子签名",
+    "zy-utils",
+    "工具",
+    "zhyebe",
+    "工具组件"
+  ],
+  "main": "zy-utils.umd.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
