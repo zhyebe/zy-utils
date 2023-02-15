@@ -1,13 +1,14 @@
+import { App, DefineComponent } from 'vue'
 import ViteSign from "./vite-sign/index.vue";
 
 export { ViteSign }
 
-const component = [ViteSign]
+const component: DefineComponent<{}, {}, any>[] = [ViteSign]
 
 const ZyUtils = {
-  install(App: any) {
+  install(app: App<Element>) {
     component.forEach((item) => {
-      App.component(item.name, ViteSign);
+      app.component(item.name, ViteSign);
     });
   }
 }
