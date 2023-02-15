@@ -1,9 +1,13 @@
-## 一、电子签名组件
+# lxhby-utils组件库(说明)
+### 仅支持vue3，typescript
+- 直接`npm install lxhby-utils@latest --save`或者`yarn add lxhby-utils@latest --save`；
 
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/zhyebe/zy-utils)
 
-### 仅支持vue3，typescript
-- 直接`npm install lxhby-utils@latest --save`或者`yarn add lxhby-utils@latest --save`；
+## 一、电子签名组件
+### 组件电子签名感谢大神原作者JaimeCheng提供源码支持：
+[点击此处查看原作出处](https://github.com/JaimeCheng/vue-esign)
+
 ### 功能
 1. 兼容 PC 和 Mobile；
 2. 画布自适应屏幕大小变化（窗口缩放、屏幕旋转时画布无需重置，自动校正坐标）；
@@ -94,3 +98,5 @@ sign.value?.generate().then(res => {
   console.warn(err) // 画布没有签字时会执行这里 'Not Signned'
 })
 ```
+
+## 二、其他组件持续更新中...
