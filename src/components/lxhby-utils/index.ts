@@ -5,7 +5,7 @@ export { ViteSign }
 
 const component: DefineComponent<{}, {}, any>[] = [ViteSign]
 
-const ZyUtils = {
+const LxhbyUtils = {
   install(app: App<Element>) {
     component.forEach((item) => {
       app.component(item.name, ViteSign);
@@ -13,4 +13,4 @@ const ZyUtils = {
   }
 }
 
-export default ZyUtils;
+export default LxhbyUtils;

@@ -16,17 +16,17 @@ export default defineConfig({
       patterns: [
         {
           from: 'src/static',
-          to: 'zy-utils'
+          to: 'lxhby-utils'
         }
       ]
     })
   ],
   build: {
-    outDir: 'zy-utils',
+    outDir: 'lxhby-utils',
     lib: {
-      entry: resolve("./src/components/zy-utils/index.ts"),
-      name: 'zy-utils',
-      fileName: 'zy-utils'
+      entry: resolve("./src/components/lxhby-utils/index.ts"),
+      name: 'lxhby-utils',
+      fileName: 'lxhby-utils'
     },
     rollupOptions: {
       external: ["vue"],
