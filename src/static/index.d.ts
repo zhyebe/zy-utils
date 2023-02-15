@@ -1,4 +1,4 @@
-import * as lxhbyUtils from 'lxhby-utils.umd'
+import * as lxhbyUtils from './lxhby-utils.umd'
 
 import { App, DefineComponent } from 'vue'
 
